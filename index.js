@@ -2,7 +2,7 @@ function maquinaTuring(a, operacao, b) {
 
     let resultado = [];
 
-    const operadores = ['/', '*', '-', '+']
+    const operadores = ['/', '*', '-', '+'];
 
     for(let i = 0; i < operadores.length; i++) {
         if (operadores[i] === operacao) {
@@ -19,17 +19,13 @@ function maquinaTuring(a, operacao, b) {
                 case '+':
                     resultado = a + b;
                     break;
-            }
-        }
-    }
+            };
+        };
+    };
 
     return resultado;
 
 }
 
-const num1 = prompt('Digite o primeiro número')
-const operacao = prompt('Digite uma operação matemática (resultados aceitos: /, *, -, +)')
-const num2 = prompt('Digite o segundo número')
-
-const resultado = alert(maquinaTuring(num1,operacao, num2));
+console.log(maquinaTuring(num1, operacao, num2));
 
